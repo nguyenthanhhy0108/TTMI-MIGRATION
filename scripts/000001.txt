@@ -1,0 +1,2 @@
+python -m migration.core.000001_module_1-up
+python -m migration.core.000001_module_1-down
