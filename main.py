@@ -38,7 +38,6 @@ def run_migrate_up(version):
     for migration_file in migration_files:
         if int(migration_file[:6]) == version:
             result = subprocess.run(f"python -m {path}.{migration_file[:-3]}",shell=True,text=True)
-            print(result.stderr)
             return
 
 def run_migrate_down(version):
@@ -49,7 +48,6 @@ def run_migrate_down(version):
     for migration_file in migration_files:
         if int(migration_file[:6]) == version:
             result = subprocess.run(f"python -m {path}.{migration_file[:-3]}",shell=True,text=True)
-            print(result.stderr)
             return
 
 
