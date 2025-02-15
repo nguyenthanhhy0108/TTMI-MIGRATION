@@ -2,6 +2,10 @@ from migration.utils.functions import delete_custom_field, delete_doctype, delet
 from loguru import logger
 
 
+logger.info("Purchase invoice item set up...")
+delete_custom_field(fieldname='give_back_qty', doctype='Purchase Invoice Item')
+
+
 logger.info("Material request reverse...")
 delete_custom_field(fieldname='no', doctype='Material Request')
 delete_custom_field(fieldname='description', doctype='Material Request')
