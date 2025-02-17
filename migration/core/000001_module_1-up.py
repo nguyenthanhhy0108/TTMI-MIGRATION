@@ -42,5 +42,6 @@ add_custom_field('Material Request', 'description', 'Data')
 add_custom_field('Material Request', 'no', 'Data')
 
 
-logger.info("Purchase invoice item set up...")
-add_custom_field('Purchase Invoice Item', 'give_back_qty', 'Int', default=0)
+logger.info("Warehouse set up...")
+add_custom_field('Warehouse', 'alias', 'Data')
+add_custom_field('Warehouse', 'description', 'Data')
