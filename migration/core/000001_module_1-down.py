@@ -7,6 +7,7 @@ delete_custom_field(fieldname='description', doctype='Department')
 
 
 logger.info("Warehouse reverse...")
+delete_custom_field(fieldname='department_id', doctype='Warehouse')
 delete_custom_field(fieldname='description', doctype='Warehouse')
 
 

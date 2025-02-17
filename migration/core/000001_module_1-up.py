@@ -44,6 +44,7 @@ add_custom_field('Material Request', 'no', 'Data')
 
 logger.info("Warehouse set up...")
 add_custom_field('Warehouse', 'description', 'Data')
+add_custom_field('Warehouse', 'department_id', 'Link', link_to='Department')
 
 
 logger.info("Department set up...")
