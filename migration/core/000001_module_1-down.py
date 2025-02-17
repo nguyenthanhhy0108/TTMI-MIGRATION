@@ -4,7 +4,6 @@ from loguru import logger
 
 logger.info("Warehouse set up...")
 delete_custom_field(fieldname='description', doctype='Warehouse')
-delete_custom_field(fieldname='alias', doctype='Warehouse')
 
 
 logger.info("Material request reverse...")

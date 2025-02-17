@@ -43,5 +43,4 @@ add_custom_field('Material Request', 'no', 'Data')
 
 
 logger.info("Warehouse set up...")
-add_custom_field('Warehouse', 'alias', 'Data')
 add_custom_field('Warehouse', 'description', 'Data')
