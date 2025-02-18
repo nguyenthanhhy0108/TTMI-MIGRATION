@@ -49,3 +49,8 @@ add_custom_field('Warehouse', 'department_id', 'Link', link_to='Department')
 
 logger.info("Department set up...")
 add_custom_field('Department', 'description', 'Data')
+
+
+logger.info("Supplier set up...")
+add_custom_field('Supplier', 'tax_code', 'Data')
+add_custom_field('Supplier', 'phone', 'Data')
