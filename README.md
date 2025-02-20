@@ -5,9 +5,13 @@
 ### 1. System Requirements
 - **Python**
 - **Conda**
+- **ERP Next Docker**
 
 ### 2. Conda Installation
-You should install Miniconda. Follow the official instructions [here](https://docs.conda.io/en/latest/miniconda.html).
+You should install **Miniconda**. Follow the official instructions [here](https://docs.conda.io/en/latest/miniconda.html).
+
+### 3. ERP Next Docker Installation
+You should install **ERP Next Docker**. Follow the official instructions [here](https://github.com/frappe/frappe_docker).
 
 ### 3. Clone Repository
 ```bash
