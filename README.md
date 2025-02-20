@@ -13,6 +13,8 @@ You should install **Miniconda**. Follow the official instructions [here](https:
 ### 3. ERP Next Docker Installation
 You should install **ERP Next Docker**. Follow the official instructions [here](https://github.com/frappe/frappe_docker).
 
+After these steps, make sure your ERP Next Docker is running on port **8080**.
+
 ### 4. Clone Repository
 ```bash
 git clone https://github.com/nguyenthanhhy0108/TTMI-MIGRATION.git
