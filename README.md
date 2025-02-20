@@ -1,8 +1,5 @@
 # ERPNext Migration
 
-## 📌 Your Current Version
-[Version Here](URL)
-
 ## 🛠️ Installation
 
 ### 1. System Requirements
@@ -14,8 +11,8 @@ You should install Miniconda. Follow the official instructions [here](https://do
 
 ### 3. Clone Repository
 ```bash
-git clone https://github.com/your-org/erpnext-migration.git
-cd erpnext-migration
+git clone https://github.com/nguyenthanhhy0108/TTMI-MIGRATION.git
+cd TTMI-MIGRATION
 ```
 
 ### 4. Create Virtual Environment & Install Dependencies
@@ -26,6 +23,11 @@ pip install -r requirements.txt                    # Install dependencies
 ```
 
 ### 5. Run Migration
+
+```bash
+python main.py -v 0                                # Initialize you ERP-NEXT version
+```
+
 ```bash
 python main.py -v {your_expected_version}
 ```
