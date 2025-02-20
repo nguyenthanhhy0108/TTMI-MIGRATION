@@ -1,4 +1,4 @@
-# ERPNext Migration
+# TTMI ERP Migration
 
 ## 🛠️ Installation
 
