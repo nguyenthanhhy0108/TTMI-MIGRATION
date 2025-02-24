@@ -49,9 +49,9 @@ delete_custom_field(fieldname='uom_alias', doctype='UOM')
 delete_custom_field(fieldname='status', doctype='UOM')
 
 
-logger.info("Account reverse...")
-delete_data('Account', '3331 - VAT Output - TTMI')
-delete_data('Account', '1331 - Thuế GTGT Đầu Vào - TTMI')
+# logger.info("Account reverse...")
+# delete_data('Account', '3331 - VAT Output - TTMI')
+# delete_data('Account', '1331 - Thuế GTGT Đầu Vào - TTMI')
 
 
 
