@@ -1,6 +1,6 @@
 import requests
 import json
-from migration.config import ADMIN_HEADERS, ERPNEXT_DOMAIN, ERPNEXT_CUSTOM_FIELD_URL, ERPNEXT_CUSTOM_DOCTYPE_URL, ERPNEXT_CUSTOM_PERMISSION_URL
+from migration.config import ADMIN_HEADERS, ERPNEXT_DOMAIN, ERPNEXT_CUSTOM_FIELD_URL, ERPNEXT_CUSTOM_DOCTYPE_URL, ERPNEXT_CUSTOM_PERMISSION_URL, ERPNEXT_RESOURCE_URL
 from loguru import logger
 
 
@@ -98,4 +98,23 @@ def delete_doctype(doctype_name):
         logger.success(f"Doctype {doctype_name} deleted successfully!")
     else:
         logger.error(f"Fail when deleting {doctype_name} doctype. Detail: \n {response.text}")
+        print(response.text)
+
+    
+def insert_data(doctype: str, data):
+    response = requests.post(f"{ERPNEXT_DOMAIN}{ERPNEXT_RESOURCE_URL}/{doctype}", headers=ADMIN_HEADERS, json=data)
+    if response.status_code == 200:
+        logger.success(f"Insert data into {doctype} successfully!")
+    else:
+        logger.error(f"Fail when inserting data into {doctype}. Detail: \n {response.text}")
+        print(response.text)
+
+
+def delete_data(doctype: str, name: str):
+    response = requests.delete(f"{ERPNEXT_DOMAIN}{ERPNEXT_RESOURCE_URL}/{doctype}/{name}", headers=ADMIN_HEADERS)
+
+    if response.status_code == 202:
+        logger.success(f"Doctype {doctype} {name} deleted successfully!")
+    else:
+        logger.error(f"Fail when deleting {doctype} data ({name}). Detail: \n {response.text}")
         print(response.text)

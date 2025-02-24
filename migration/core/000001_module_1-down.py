@@ -1,8 +1,12 @@
-from migration.utils.functions import delete_custom_field, delete_doctype, delete_permission
+from migration.utils.functions import delete_custom_field, delete_doctype, delete_permission, delete_data
 from loguru import logger
 
 
 logger.info("Supplier reverse...")
+delete_custom_field(fieldname='link', doctype='Supplier')
+delete_custom_field(fieldname='mail', doctype='Supplier')
+delete_custom_field(fieldname='fax', doctype='Supplier')
+delete_custom_field(fieldname='address', doctype='Supplier')
 delete_custom_field(fieldname='phone', doctype='Supplier')
 delete_custom_field(fieldname='tax_code', doctype='Supplier')
 
@@ -43,6 +47,12 @@ logger.info("UOM reverse...")
 delete_custom_field(fieldname='uom_detail', doctype='UOM')
 delete_custom_field(fieldname='uom_alias', doctype='UOM')
 delete_custom_field(fieldname='status', doctype='UOM')
+
+
+logger.info("Account reverse...")
+delete_data('Account', '3331 - VAT Output - TTMI')
+delete_data('Account', '1331 - Thuế GTGT Đầu Vào - TTMI')
+
 
 
 
