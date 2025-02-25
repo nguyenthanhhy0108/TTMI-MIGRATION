@@ -15,8 +15,7 @@ data = {
     "module": "Custom",
     "custom": 1,
     "fields": [
-        {"fieldname": "material_type_code", "fieldtype": "Data", "reqd": 1, "unique": 1},
-        {"fieldname": "material_type_name", "fieldtype": "Data", "reqd": 1, "unique": 1},
+        {"fieldname": "material_type_name", "fieldtype": "Data", "reqd": 1},
         {"fieldname": "material_type_alias", "fieldtype": "Data", "reqd": 0},
         {"fieldname": "status", "fieldtype": "Select", "options": 'in_use\nnot_in_use'}
     ]
@@ -84,3 +83,7 @@ add_custom_field('Supplier', 'link', 'Data')
 #         "is_group": 0
 #     }
 # insert_data('Account', data)
+
+
+logger.info("Purchase Invoice set up...")
+add_custom_field('Purchase Invoice', 'employee_name', 'Data')
