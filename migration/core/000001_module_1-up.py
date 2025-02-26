@@ -86,4 +86,4 @@ add_custom_field('Supplier', 'link', 'Data')
 
 
 logger.info("Purchase Invoice set up...")
-add_custom_field('Purchase Invoice', 'employee_name', 'Data')
+add_custom_field('Purchase Invoice', 'employee_name', 'Link', link_to='Employee')
