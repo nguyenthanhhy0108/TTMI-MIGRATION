@@ -11,6 +11,14 @@ add_custom_field('Supplier', 'mail', 'Data')
 add_custom_field('Supplier', 'link', 'Data')
 
 
+logger.info("Stock Entry set up...")
+add_custom_field('Stock Entry', 'description', 'Long Text')
+add_custom_field('Stock Entry', 'transaction_code', 'Data', reqd=1)
+add_custom_field('Stock Entry', 'receipt_type', 'Data')
+add_custom_field('Stock Entry', 'issue_type', 'Data')
+add_custom_field('Stock Entry', 'transfer_type', 'Data')
+
+
 # logger.info("Account set up...")
 # data = {
 #         "account_name": "Thuế GTGT Đầu Vào",
