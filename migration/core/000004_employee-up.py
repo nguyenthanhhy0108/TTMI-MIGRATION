@@ -17,10 +17,22 @@ create_doctype(province_data)
 
 
 add_custom_field('Employee', 'birthplace', 'Data') # Nơi sinh
-add_custom_field('Employee', 'tax_code', 'Data') # Mã thuế
+add_custom_field('Employee', 'tax_code', 'Data') # Mã số thuế TNCN
 add_custom_field('Employee', 'citizen_identification_number', 'Data') # Số CMND
 add_custom_field('Employee', 'issue_date', 'Date') # Ngày cấp
 add_custom_field('Employee', 'province', 'Link', link_to='Province') # Nơi cấp
 add_custom_field('Employee', 'is_sales_agent', 'Select', options='Yes\nNo') # Bán hàng
 add_custom_field('Employee', 'is_purchasing_agent', 'Select', options='Yes\nNo') # Mua hàng
 add_custom_field('Employee', 'is_debt_or_provisional', 'Select', options='Yes\nNo') # Công nợ/tạm ứng
+
+# employee: Mã nhân viên
+# first_name: Họ và tên
+# designation: Chức vụ
+# department: Bộ phận
+# gender: Giới tính
+# date_of_birth: Ngày sinh
+# current_address: Địa chỉ thường trú
+# cell_number: Điện thoại
+# personal_email: Email
+# Bank A/C No.: Số thẻ/Ngân hàng
+# status: Trạng thái
