@@ -12,6 +12,9 @@ add_custom_field('Supplier', 'employee', 'Link', link_to='Employee') # Nhân vi�
 add_custom_field('Supplier', 'supplier_group_1', 'Link', link_to='Supplier Group') # Nhóm 1
 add_custom_field('Supplier', 'supplier_group_2', 'Link', link_to='Supplier Group') # Nhóm 2
 add_custom_field('Supplier', 'supplier_group_3', 'Link', link_to='Supplier Group') # Nhóm 3
+add_custom_field('Supplier', 'payment_term', 'Link', link_to='Payment Term') # Mã th.toán công nợ
+add_custom_field('Supplier', 'credit_limit', 'Float') # Giới hạn tiền nợ
+add_custom_field('Supplier', 'mode_of_payment', 'Link', link_to='Mode of Payment') # Phương thức thanh toán
 add_custom_field('Supplier', 'region', 'Data') # Khu vực
 add_custom_field('Supplier', 'phone_number', 'Data') # Điện thoại
 add_custom_field('Supplier', 'fax_number', 'Data') # Fax
@@ -29,3 +32,11 @@ add_custom_field('Supplier', 'use_e_invoice', 'Select', options='Yes\nNo') # S�
 add_custom_field('Supplier', 'e_invoice_email', 'Data') # Thư nhận HĐĐT 
 add_custom_field('Supplier', 'e_invoice_representative', 'Data') # Người đại diện
 add_custom_field('Supplier', 'order_source_table', 'Table', options='Order Source') # Nguồn đơn
+
+# supplier_name: Tên nhà cung cấp
+# tax_id: Mã số thuế
+# accounts: Tài khoản ngầm định (list: company, default_account)
+# website: Trang chủ
+# disabled: Trạng thái
+# supplier_details: Thông tin thêm
+# business_type: Lĩnh vực hoạt dộng
