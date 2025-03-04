@@ -13,3 +13,10 @@ add_custom_field("Account", "calc_accounts_debt_recording_period_method", "Selec
 add_custom_field("Account", "calc_aging_method", "Select", # Pp tính tggs có
                  options="Không tính chênh lệch\Trung bình tháng\nĐích danh\nTrung bình di động")
 add_custom_field("Account", "note", "Data") # Ghi chú
+
+# account_name: Tên tài khoản
+# parent_account: Tài khoản mẹ
+# Tài khoản sổ cái (tạo bằng ledge account)
+# account_currency: Ngoại tệ gốc
+# account_type: Phân loại tài khoản
+# disabled: Trạng thái
