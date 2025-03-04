@@ -31,6 +31,7 @@ delete_custom_field('size', 'Item')
 delete_custom_field('specifications', 'Item')
 delete_custom_field('promotion_account', 'Item')
 delete_custom_field('name_alias', 'Item')
+delete_custom_field('note', 'Item')
 delete_custom_field('tax_code', 'Tax Category')
 delete_custom_field('name_alias', 'Tax Category')
 

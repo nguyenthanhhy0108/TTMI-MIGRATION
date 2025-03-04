@@ -30,7 +30,9 @@ delete_custom_field(fieldname='use_e_invoice', doctype='Supplier')
 delete_custom_field(fieldname='e_invoice_email', doctype='Supplier')
 delete_custom_field(fieldname='e_invoice_representative', doctype='Supplier')
 delete_custom_field(fieldname='order_source_table', doctype='Supplier')
-
+delete_custom_field(fieldname='payment_term', doctype='Supplier')
+delete_custom_field(fieldname='credit_limit', doctype='Supplier')
+delete_custom_field(fieldname='mode_of_payment', doctype='Supplier')
 
 
 
