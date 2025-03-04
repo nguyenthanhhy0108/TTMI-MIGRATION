@@ -2,30 +2,30 @@ from migration.utils.functions import add_custom_field, create_doctype, add_perm
 from loguru import logger
 
 
-add_custom_field('Supplier', 'supplier_code', 'Data')
-add_custom_field('Supplier', 'is_customer', 'Check')
-add_custom_field('Supplier', 'is_supplier', 'Check')
-add_custom_field('Supplier', 'name_alias', 'Data')
-add_custom_field('Supplier', 'address', 'Data')
-add_custom_field('Supplier', 'contact_person', 'Data')
-add_custom_field('Supplier', 'employee', 'Link', link_to='Employee')
-add_custom_field('Supplier', 'supplier_group_1', 'Link', link_to='Supplier Group')
-add_custom_field('Supplier', 'supplier_group_2', 'Link', link_to='Supplier Group')
-add_custom_field('Supplier', 'supplier_group_3', 'Link', link_to='Supplier Group')
-add_custom_field('Supplier', 'region', 'Data')
-add_custom_field('Supplier', 'phone_number', 'Data')
-add_custom_field('Supplier', 'fax_number', 'Data')
-add_custom_field('Supplier', 'email', 'Data')
-add_custom_field('Supplier', 'note', 'Data')
-add_custom_field('Supplier', 'date_of_birth', 'Date')
-add_custom_field('Supplier', 'legal_representative', 'Data')
-add_custom_field('Supplier', 'position', 'Data')
-add_custom_field('Supplier', 'bank_account_number', 'Data')
-add_custom_field('Supplier', 'bank_name', 'Data')
-add_custom_field('Supplier', 'bank_branch', 'Data')
-add_custom_field('Supplier', 'bank_province_city', 'Data')
-add_custom_field('Supplier', 'shipping_address', 'Data')
-add_custom_field('Supplier', 'use_e_invoice', 'Select', options='Yes\nNo')
-add_custom_field('Supplier', 'e_invoice_email', 'Data')
-add_custom_field('Supplier', 'e_invoice_representative', 'Data')
-add_custom_field('Supplier', 'order_source_table', 'Table', options='Order Source')
+add_custom_field('Supplier', 'supplier_code', 'Data') # Mã nhà cung cấp
+add_custom_field('Supplier', 'is_customer', 'Check') # Khách hàng
+add_custom_field('Supplier', 'is_supplier', 'Check') # Nhà cung cấp
+add_custom_field('Supplier', 'name_alias', 'Data') # Tên khác
+add_custom_field('Supplier', 'address', 'Data') # Địa chỉ
+add_custom_field('Supplier', 'contact_person', 'Data') # Người đại diện
+add_custom_field('Supplier', 'employee', 'Link', link_to='Employee') # Nhân viên bán hàng
+add_custom_field('Supplier', 'supplier_group_1', 'Link', link_to='Supplier Group') # Nhóm 1
+add_custom_field('Supplier', 'supplier_group_2', 'Link', link_to='Supplier Group') # Nhóm 2
+add_custom_field('Supplier', 'supplier_group_3', 'Link', link_to='Supplier Group') # Nhóm 3
+add_custom_field('Supplier', 'region', 'Data') # Khu vực
+add_custom_field('Supplier', 'phone_number', 'Data') # Điện thoại
+add_custom_field('Supplier', 'fax_number', 'Data') # Fax
+add_custom_field('Supplier', 'email', 'Data') # Thư
+add_custom_field('Supplier', 'note', 'Data') # Ghi chú
+add_custom_field('Supplier', 'date_of_birth', 'Date') # Ngày sinh
+add_custom_field('Supplier', 'legal_representative', 'Data') # Người đại diện pháp luật
+add_custom_field('Supplier', 'position', 'Data') # Chức vụ
+add_custom_field('Supplier', 'bank_account_number', 'Data') # Số tài khoản
+add_custom_field('Supplier', 'bank_name', 'Data') # Tên ngân hàng
+add_custom_field('Supplier', 'bank_branch', 'Data') # Chi nhánh
+add_custom_field('Supplier', 'bank_province_city', 'Data') # Tỉnh thành
+add_custom_field('Supplier', 'shipping_address', 'Data') # Địa chỉ giao hàng
+add_custom_field('Supplier', 'use_e_invoice', 'Select', options='Yes\nNo') # Sử dụng hđ điện tử
+add_custom_field('Supplier', 'e_invoice_email', 'Data') # Thư nhận HĐĐT 
+add_custom_field('Supplier', 'e_invoice_representative', 'Data') # Người đại diện
+add_custom_field('Supplier', 'order_source_table', 'Table', options='Order Source') # Nguồn đơn
