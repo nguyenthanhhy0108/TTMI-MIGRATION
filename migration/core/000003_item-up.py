@@ -38,8 +38,29 @@ add_custom_field('Item', 'size', 'Data') # Kích cỡ
 add_custom_field('Item', 'specifications', 'Data') # Quy cách
 add_custom_field('Item', 'selling_price', 'Table', options='Item Price Table') # Giá bán
 add_custom_field('Item', 'sub_code', 'Data') # Mã phụ
-add_custom_field('Item', 'planning_style', 'Select', options='Không hoạch định\nHoạch định\nHoạch định theo cỡ lô') # Kiểu hoạch định
+add_custom_field('Item', 'planning_style', 'Select', options='Không hoạch định\nHoạch định\nHoạch định theo cỡ lô') # Kiểu tính hoạch định
 add_custom_field('Item', 'minimum_inventory', 'Float') # Tồn kho tối thiểu
 add_custom_field('Item', 'maximum_inventory', 'Float') # Tồn kho tối đa
 add_custom_field('Item', 'lastest_entry_date', 'Date') # Ngày nhập cuối
 add_custom_field('Item', 'lastest_export_date', 'Date') # Ngày xuất cuối
+add_custom_field('Item', 'note', 'Data') # Ghi chú
+
+
+# item_code: Mã sản phẩm
+# item_name: Tên sản phẩm
+# stock_uom: Đơn vị tính
+# purchase_uom: ĐVT nhập liệu
+# is_stock_item: Theo dõi tồn kho
+# has_batch_no: Theo dõi lô
+# valuation_method: Cách tính giá tồn kho
+# item_group: Loại vật tư
+# default_location: Vị trí mặc định
+# shelf_life_in_days: Số ngày sử dụng
+# barcodes: Mã vạch (Barcode) (table)
+# weight_per_unit: Khối lượng
+# country_of_origin: Ñước sản xuất
+# description: Mô tả
+# uoms: Quy đổi đvt (table)
+# Mã hàng hoá (Không biết)
+# Hình ảnh (Không biết)
+# disabled: Trạng thái
