@@ -17,13 +17,15 @@ def add_custom_field(dt, fieldname, fieldtype, reqd=0, default=None, options=Non
         data["options"] = options
     elif fieldtype == "Link" and link_to:
         data["options"] = link_to
+    elif fieldtype == "Table" and options:
+        data["options"] = options
     
     response = requests.post(f"{ERPNEXT_DOMAIN}{ERPNEXT_CUSTOM_FIELD_URL}", headers=ADMIN_HEADERS, data=json.dumps(data))
     
     if response.status_code == 200:
         logger.success(f"Field {fieldname} created successfully!")
     else:
-        logger.error(f"Fail when creating {fieldname} field. Detail: \n {response.text}")
+        logger.error(f"Fail when creating {fieldname} field, doctype: {dt}. Detail: \n {response.text}")
 
 
 
@@ -35,7 +37,7 @@ def delete_custom_field(fieldname, doctype):
     if response.status_code == 202:
         logger.success(f"Field {fieldname} deleted successfully!")
     else:
-        logger.error(f"Fail when deleting {fieldname} field. Detail: \n {response.text}")
+        logger.error(f"Fail when deleting {fieldname} field, doctype: {doctype}. Detail: \n {response.text}")
 
 
 def create_doctype(doctype_data):

@@ -40,5 +40,11 @@ python main.py -v 0                                # Initialize you ERP-NEXT ver
 python main.py -v {your_expected_version}
 ```
 
+## New Doctype:
+- Order Source
+- Item Price Table
+- Province
+
 ## 📜 License
 This project is licensed under the **MIT License**. See the full details in [`LICENSE`](LICENSE).
+
