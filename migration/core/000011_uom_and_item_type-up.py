@@ -25,14 +25,14 @@ item_type_data = {
         {"fieldname": "item_type_name", "fieldtype": "Data", "reqd": 1}, # Tên loại vật tư
         {"fieldname": "name_alias", "fieldtype":"Data", "reqd":0}, # Tên khác
         {"fieldname": "status", "fieldtype": "Select", "options": 'in_use\nnot_in_use'}, # Trạng thái
-        {"fieldname": "warehouse_account", "fieldtype": "Link", "link_to": "Account"}, # Tk kho
-        {"fieldname": "revenue_account", "fieldtype": "Link", "link_to": "Account"}, # Tk doanh thu
-        {"fieldname": "cost_account", "fieldtype": "Link", "link_to": "Account"}, # Tk giá vốn
-        {"fieldname": "discount_account", "fieldtype": "Link", "link_to": "Account"}, # Tk chiết khấu
-        {"fieldname": "promotion_account", "fieldtype": "Link", "link_to": "Account"}, # Tk khuyến mãi
-        {"fieldname": "return_account", "fieldtype": "Link", "link_to": "Account"}, # Tk trả lại
-        {"fieldname": "wip_account", "fieldtype": "Link", "link_to": "Account"}, # Tk sản phẩm dở dang
-        {"fieldname": "material_account", "fieldtype": "Link", "link_to": "Account"}, # Tk chi phí NVL        
+        {"fieldname": "warehouse_account", "fieldtype": "Link", "options": "Account"}, # Tk kho
+        {"fieldname": "revenue_account", "fieldtype": "Link", "options": "Account"}, # Tk doanh thu
+        {"fieldname": "cost_account", "fieldtype": "Link", "options": "Account"}, # Tk giá vốn
+        {"fieldname": "discount_account", "fieldtype": "Link", "options": "Account"}, # Tk chiết khấu
+        {"fieldname": "promotion_account", "fieldtype": "Link", "options": "Account"}, # Tk khuyến mãi
+        {"fieldname": "return_account", "fieldtype": "Link", "options": "Account"}, # Tk trả lại
+        {"fieldname": "wip_account", "fieldtype": "Link", "options": "Account"}, # Tk sản phẩm dở dang
+        {"fieldname": "material_account", "fieldtype": "Link", "options": "Account"}, # Tk chi phí NVL        
     ]
 }
 
