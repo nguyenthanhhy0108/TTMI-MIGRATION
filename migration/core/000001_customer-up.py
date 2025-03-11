@@ -2,6 +2,7 @@ from migration.utils.functions import add_custom_field, create_doctype, add_perm
 from loguru import logger
 
 
+logger.info("1. Customer up...")
 order_source_data = {
     "doctype": "DocType",
     "name": "Order Source",
@@ -21,6 +22,7 @@ create_doctype(order_source_data)
 add_custom_field('Customer Group', 'group_id', 'Data')  # Mã nhóm
 add_custom_field('Customer Group', 'group_alias', 'Data') # Tên khác
 add_custom_field('Customer Group', 'status', 'Select', options='in_use\nnot_in_use')
+
 add_custom_field('Customer', 'customer_code', 'Data') # Mã khách hàng
 add_custom_field('Customer', 'is_customer', 'Check') # Khách hàng
 add_custom_field('Customer', 'is_supplier', 'Check') # Nhà cung cấp

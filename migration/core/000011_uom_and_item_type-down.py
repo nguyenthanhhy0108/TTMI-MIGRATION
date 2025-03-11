@@ -3,7 +3,7 @@ from loguru import logger
 
 ###################### UOM ######################
 
-logger.info("UOM reverse...")
+logger.info("11. UOM and Item Type down...")
 
 delete_custom_field("uom_id", "UOM")
 delete_custom_field("name_alias", "UOM")
@@ -11,7 +11,6 @@ delete_custom_field("uom_2", "UOM")
 
 ###################### Item Type ######################
 
-logger.info("Item Type reverse...")
 delete_doctype("Item Type")
 
 

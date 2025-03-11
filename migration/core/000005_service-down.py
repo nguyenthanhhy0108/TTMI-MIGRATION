@@ -2,6 +2,6 @@ from migration.utils.functions import delete_custom_field, delete_doctype, delet
 from loguru import logger
 
 
-logger.info("Service reverse...")
+logger.info("5. Service down...")
 
 delete_doctype('Service')

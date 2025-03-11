@@ -1,6 +1,7 @@
 from migration.utils.functions import add_custom_field, create_doctype, add_permission, insert_data
 from loguru import logger
 
+logger.info("6. Account up...")
 add_custom_field("Account", "account_id", "Data") # Tài khoản
 add_custom_field("Account", "name_english", "Data") # Tên tiếng anh
 add_custom_field("Account", "name_alias", "Data") # Tên khác

@@ -1,7 +1,7 @@
 from migration.utils.functions import add_custom_field, create_doctype, add_permission, insert_data
 from loguru import logger
 
-
+logger.info("2. Supplier up...")
 add_custom_field('Supplier', 'supplier_code', 'Data') # Mã nhà cung cấp
 add_custom_field('Supplier', 'is_customer', 'Check') # Khách hàng
 add_custom_field('Supplier', 'is_supplier', 'Check') # Nhà cung cấp

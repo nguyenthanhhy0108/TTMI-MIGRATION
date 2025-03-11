@@ -2,7 +2,7 @@ from migration.utils.functions import delete_custom_field, delete_doctype, delet
 from loguru import logger
 
 
-logger.info("Item Group reverse...")
+logger.info("9. Item Group down...")
 
 delete_custom_field("group_type", "Item Group")
 delete_custom_field("item_group_id", "Item Group")

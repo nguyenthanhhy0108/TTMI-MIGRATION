@@ -1,6 +1,7 @@
 from migration.utils.functions import add_custom_field, create_doctype, add_permission, insert_data
 from loguru import logger
 
+logger.info("3. Item up...")
 item_price_table_data = {
     "doctype": "DocType",
     "name": "Item Price Table",
@@ -13,6 +14,7 @@ item_price_table_data = {
 }
 
 create_doctype(item_price_table_data)
+
 add_custom_field('Tax Category', 'tax_code', 'Data') # Mã thuế
 add_custom_field('Tax Category', 'name_alias', 'Data') # Tên khác
 

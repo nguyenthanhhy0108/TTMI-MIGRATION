@@ -1,6 +1,7 @@
 from migration.utils.functions import add_custom_field, create_doctype, add_permission, insert_data
 from loguru import logger
 
+logger.info("10. Warehouse up...")
 add_custom_field("Warehouse", "warehouse_id", "Data") # Mã kho
 add_custom_field("Warehouse", "name_alias", "Data") # Tên 2
 add_custom_field("Warehouse", "have_location", "Check") # Vị trí

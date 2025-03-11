@@ -1,6 +1,7 @@
 from migration.utils.functions import add_custom_field, create_doctype, add_permission, insert_data
 from loguru import logger
 
+logger.info("9. Item Group up...")
 add_custom_field("Item Group", "group_type", "Data") # Loại nhóm
 add_custom_field("Item Group", "item_group_id", "Data") # Mã nhóm
 add_custom_field("Item Group", "name_alias", "Data") # Tên 2

@@ -1,6 +1,8 @@
 from migration.utils.functions import add_custom_field, create_doctype, add_permission, insert_data
 from loguru import logger
 
+logger.info("11. UOM and Item Type up...")
+
 ###################### UOM ######################
 
 add_custom_field("UOM", "uom_id", "Data") # Mã đơn vị

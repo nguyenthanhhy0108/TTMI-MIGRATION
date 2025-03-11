@@ -1,6 +1,7 @@
 from migration.utils.functions import add_custom_field, create_doctype, add_permission, insert_data
 from loguru import logger
 
+logger.info("8. Cost Center up...")
 cost_category_data = {
     "doctype": "DocType",
     "name": "Cost Category",

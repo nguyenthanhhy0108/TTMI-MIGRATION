@@ -1,6 +1,7 @@
 from migration.utils.functions import add_custom_field, create_doctype, add_permission, insert_data
 from loguru import logger
 
+logger.info("4. Employee up...")
 province_data = {
     "doctype": "DocType",
     "name": "Province",

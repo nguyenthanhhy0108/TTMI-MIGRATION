@@ -2,7 +2,7 @@ from migration.utils.functions import delete_custom_field, delete_doctype, delet
 from loguru import logger
 
 
-logger.info("Cost Center reverse...")
+logger.info("8. Cost Center down...")
 
 delete_custom_field("cost_center_id", "Cost Center")
 delete_custom_field("name_alias", "Cost Center")

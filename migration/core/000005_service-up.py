@@ -1,6 +1,7 @@
 from migration.utils.functions import add_custom_field, create_doctype, add_permission, insert_data
 from loguru import logger
 
+logger.info("5. Service up...")
 service_data = {
     "doctype": "DocType",
     "name": "Service",

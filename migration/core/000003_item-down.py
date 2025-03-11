@@ -2,7 +2,7 @@ from migration.utils.functions import delete_custom_field, delete_doctype, delet
 from loguru import logger
 
 
-logger.info("Item reverse...")
+logger.info("3. Item down...")
 
 delete_custom_field('lastest_export_date', 'Item')
 delete_custom_field('lastest_entry_date', 'Item')
