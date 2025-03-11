@@ -47,6 +47,7 @@ add_custom_field('Customer', 'bank_name', 'Data') # Tên ngân hàng
 add_custom_field('Customer', 'bank_branch', 'Data') # Chi nhánh
 add_custom_field('Customer', 'bank_province_city', 'Data') # Tỉnh thành
 add_custom_field('Customer', 'shipping_address', 'Data') # Địa chỉ giao hàng
+add_custom_field('Customer', 'operational_field', 'Data') # Địa chỉ giao hàng
 add_custom_field('Customer', 'use_e_invoice', 'Select', options='Yes\nNo') # Sử dụng hđ điện tử
 add_custom_field('Customer', 'e_invoice_email', 'Data') # Thư nhận HĐĐT
 add_custom_field('Customer', 'e_invoice_representative', 'Data') # Nguời đại diện
