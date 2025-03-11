@@ -10,6 +10,7 @@ delete_custom_field(fieldname='name_alias', doctype='Customer')
 delete_custom_field(fieldname='address', doctype='Customer')
 delete_custom_field(fieldname='contact_person', doctype='Customer')
 delete_custom_field(fieldname='employee', doctype='Customer')
+delete_custom_field(fieldname='customer_account', doctype='Account') # Tài khoản ngầm định
 delete_custom_field(fieldname='customer_group_1', doctype='Customer')
 delete_custom_field(fieldname='customer_group_2', doctype='Customer')
 delete_custom_field(fieldname='customer_group_3', doctype='Customer')

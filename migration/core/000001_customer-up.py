@@ -30,6 +30,7 @@ add_custom_field('Customer', 'name_alias', 'Data') # Tên khác
 add_custom_field('Customer', 'address', 'Data') # Địa chỉ
 add_custom_field('Customer', 'contact_person', 'Data') # Người liên hệ
 add_custom_field('Customer', 'employee', 'Link', link_to='Employee') # Nhân viên bán hàng
+add_custom_field('Customer', 'customer_account', 'Link', link_to='Account') # Tài khoản ngầm định
 add_custom_field('Customer', 'customer_group_1', 'Link', link_to='Customer Group') # Nhóm 1
 add_custom_field('Customer', 'customer_group_2', 'Link', link_to='Customer Group') # Nhóm 2
 add_custom_field('Customer', 'customer_group_3', 'Link', link_to='Customer Group') # Nhóm 3
