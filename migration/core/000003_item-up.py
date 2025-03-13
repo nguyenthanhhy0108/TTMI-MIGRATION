@@ -26,6 +26,7 @@ add_custom_field('Item', 'item_group_3', 'Link', link_to='Item Group') # Nhóm 3
 add_custom_field('Item', 'default_warehouse', 'Link', link_to='Warehouse') # Mã kho mặc định
 add_custom_field('Item', 'default_location', 'Link', link_to='Location') # Mã vị trí mặc định
 add_custom_field('Item', 'default_tax_code', 'Link', link_to='Tax Category') # Mã thuế mặc định
+add_custom_field('Item', 'barcode', 'Data') # Mã vạch
 add_custom_field('Item', 'cost_center', 'Link', link_to='Cost Center') # Mã phí 
 add_custom_field('Item', 'warehouse_account', 'Link', link_to='Account') # Tk kho (Tk vật tư)
 add_custom_field('Item', 'income_account', 'Link', link_to='Account') # Tk doanh thu
