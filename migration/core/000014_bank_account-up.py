@@ -1,17 +1,17 @@
-from migration.utils.functions import delete_custom_field, delete_doctype, delete_permission, delete_data
+from migration.utils.functions import add_custom_field, create_doctype, add_permission, insert_data
 from loguru import logger
 
-logger.info("13. Bank Account down...")
+logger.info("13. Bank Account up...")
 
 ###################### Bank Account ######################
 
-delete_custom_field("account", "Bank Account")  # Tài khoản
-delete_custom_field("bank_account", "Bank Account")  # Tài khoản ngân hàng
-delete_custom_field("bank_name", "Bank Account")  # Tên ngân hàng
-delete_custom_field("alias", "Bank Account")  # Tên khác
-delete_custom_field("branch", "Bank Account")  # Chi nhánh
-delete_custom_field("province", "Bank Account")  # Tỉnh
-delete_custom_field("phone", "Bank Account")  # Điện thoại
-delete_custom_field("fax", "Bank Account")  # Fax
-delete_custom_field("account_holder", "Bank Account")  # Chủ tài khoản
-delete_custom_field("notes", "Bank Account")  # Ghi chú
+# add custom field
+add_custom_field("Bank Account", "cal_account", "Link", link_to="Account") # Tài khoản
+add_custom_field("Bank Account", "bank_account", "Data") # Tài khoản ngân hàng
+add_custom_field("Bank Account", "alias", "Data") # Tên khác
+add_custom_field("Bank Account", "branch", "Data") # Chi nhánh
+add_custom_field("Bank Account", "province", "Data") # Tỉnh
+add_custom_field("Bank Account", "phone", "Data") # Điện thoại
+add_custom_field("Bank Account", "fax", "Data") # Fax
+add_custom_field("Bank Account", "account_holder", "Data") # Chủ tài khoản
+add_custom_field("Bank Account", "notes", "Data") # Ghi chú
