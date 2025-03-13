@@ -64,6 +64,10 @@ def migrate(version):
 
     save_version_to_file(version)
 
+def disable_and_delete_doctype(doctype):
+    path = 'migration.utils.functions'
+    result = subprocess.run(f"python -c \"from {path} import disable_and_delete_data; disable_and_delete_data('{doctype}')\"", shell=True, text=True)
+    return
 
 def main():
     # Create the parser
@@ -71,12 +75,17 @@ def main():
 
     # Add command-line arguments
     parser.add_argument("-v", "--version", type=str, help="migration version", required=False)
+    parser.add_argument("-d", "--disable", type=str, help="disable and delete data for specified doctype", required=False)
 
     # Parse the arguments
     args = parser.parse_args()
 
     # Use the arguments
-    if args.version:
+    if args.disable:
+        print(f"Disabling and deleting data for doctype: {args.disable}")
+        disable_and_delete_doctype(args.disable)
+        return
+    elif args.version:
         migrate(args.version)
         return
     else:
