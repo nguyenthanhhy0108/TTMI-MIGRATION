@@ -120,3 +120,29 @@ def delete_data(doctype: str, name: str):
     else:
         logger.error(f"Fail when deleting {doctype} data ({name}). Detail: \n {response.text}")
         print(response.text)
+
+
+def disable_and_delete_data(doctype: str):
+    response = requests.get(
+        f"{ERPNEXT_DOMAIN}{ERPNEXT_RESOURCE_URL}/{doctype}?limit_page_length=0", headers=ADMIN_HEADERS
+    )
+    data = response.json()
+
+    if "data" in data:
+        objects = [item["name"] for item in data["data"]]
+        
+        for obj in objects:
+            update_payload = {"enabled": 0}
+            update_response = requests.put(f"{ERPNEXT_DOMAIN}{ERPNEXT_RESOURCE_URL}/{doctype}/{obj}", json=update_payload, headers=ADMIN_HEADERS)
+            
+            if update_response.status_code == 200:
+                delete_response = requests.delete(f"{ERPNEXT_DOMAIN}{ERPNEXT_RESOURCE_URL}/{doctype}/{obj}", headers=ADMIN_HEADERS)
+                logger.success(f"Doctype {doctype} {obj} disabled successfully!")
+                if delete_response.status_code == 202:
+                    logger.success(f"Doctype {doctype} {obj} deleted successfully!")
+                else:
+                    logger.error(f"Fail when deleting {doctype} {obj}. Detail: \n {delete_response.text}")
+            else:
+                logger.error(f"Fail when disabling {doctype} {obj}. Detail: \n {update_response.text}")
+    else:
+        logger.error(f"Fail when getting {doctype} list. Detail: \n {response.text}")
