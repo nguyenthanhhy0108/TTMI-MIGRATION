@@ -12,7 +12,6 @@ cost_category_data = {
         {"fieldname": "cost_category_id", "fieldtype": "Data", "reqd": 1}, # Mã nhóm
         {"fieldname": "cost_category_name", "fieldtype": "Data", "reqd": 0}, # Tên nhóm
         {"fieldname": "name_alias", "fieldtype": "Data", "reqd": 0}, # Tên khác
-        {"fieldname": "status", "fieldtype": "Select", "options": 'in_use\nnot_in_use'} # Trạng thái
     ]
 }
 

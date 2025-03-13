@@ -19,7 +19,6 @@ service_data = {
         {"fieldname": "cost_center", "fieldtype": "Link", "options": "Cost Center"}, # Mã phí
         {"fieldname": "purchase_price", "fieldtype": "Float"}, # Giá mua
         {"fieldname": "selling_price", "fieldtype": "Float"}, # Giá bán
-        {"fieldname": "status", "fieldtype": "Select", "options": "Active\nInactive"}, # Trạng thái
     ]
 }
 

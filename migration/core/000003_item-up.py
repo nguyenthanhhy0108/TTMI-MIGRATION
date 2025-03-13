@@ -32,7 +32,7 @@ add_custom_field('Tax Category', 'tax_code', 'Data') # Mã thuế
 add_custom_field('Tax Category', 'name_alias', 'Data') # Tên khác
 
 add_custom_field('Item', 'name_alias', 'Data') # Tên khác
-add_custom_field('Item', 'is_finished_goods', 'Select', options='1\n0') # Tạo nhập thành phẩm
+add_custom_field('Item', 'is_finished_goods', 'Check') # Tạo nhập thành phẩm
 add_custom_field('Item', 'item_group_1', 'Link', link_to='Item Group') # Nhóm 1
 add_custom_field('Item', 'item_group_2', 'Link', link_to='Item Group') # Nhóm 2
 add_custom_field('Item', 'item_group_3', 'Link', link_to='Item Group') # Nhóm 3
@@ -42,7 +42,6 @@ add_custom_field('Item', 'default_tax_code', 'Link', link_to='Tax Category') # M
 add_custom_field('Item', 'barcode', 'Data') # Mã vạch
 add_custom_field('Item', 'cost_center', 'Link', link_to='Cost Center') # Mã phí 
 add_custom_field('Item', 'warehouse_account', 'Link', link_to='Account') # Tk kho (Tk vật tư)
-add_custom_field('Item', 'warehouse_account', 'Select', options='1\n0') # Tk kho (Tk vật tư)
 add_custom_field('Item', 'income_account', 'Link', link_to='Account') # Tk doanh thu
 add_custom_field('Item', 'expense_account', 'Link', link_to='Account') # Tk giá vốn
 add_custom_field('Item', 'discount_account', 'Link', link_to='Account') # Tk chiết khấu

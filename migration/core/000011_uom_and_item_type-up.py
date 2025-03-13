@@ -26,7 +26,6 @@ item_type_data = {
         {"fieldname": "item_type_id", "fieldtype": "Data", "reqd": 1}, # Mã loại vật tư
         {"fieldname": "item_type_name", "fieldtype": "Data", "reqd": 1}, # Tên loại vật tư
         {"fieldname": "name_alias", "fieldtype":"Data", "reqd":0}, # Tên khác
-        {"fieldname": "enabled", "fieldtype": "Select", "options": '1\n0'}, # Trạng thái
         {"fieldname": "warehouse_account", "fieldtype": "Link", "options": "Account"}, # Tk kho
         {"fieldname": "revenue_account", "fieldtype": "Link", "options": "Account"}, # Tk doanh thu
         {"fieldname": "cost_account", "fieldtype": "Link", "options": "Account"}, # Tk giá vốn

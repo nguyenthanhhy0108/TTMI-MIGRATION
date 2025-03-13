@@ -13,7 +13,6 @@ order_source_data = {
         {"fieldname": "source_id", "fieldtype": "Data", "reqd": 1}, # Mã nguồn đơn
         {"fieldname": "source_name", "fieldtype": "Data", "reqd": 1}, # Tên nguồn đơn
         {"fieldname": "note", "fieldtype":"Data", "reqd":0}, # Ghi chú
-        {"fieldname": "status", "fieldtype": "Select", "options": 'in_use\nnot_in_use'} # Trạng thái
     ]
 }
 
@@ -21,7 +20,6 @@ create_doctype(order_source_data)
 
 add_custom_field('Customer Group', 'group_id', 'Data')  # Mã nhóm
 add_custom_field('Customer Group', 'group_alias', 'Data') # Tên khác
-add_custom_field('Customer Group', 'status', 'Select', options='in_use\nnot_in_use')
 
 add_custom_field('Customer', 'customer_code', 'Data') # Mã khách hàng
 add_custom_field('Customer', 'is_customer', 'Check') # Khách hàng
@@ -48,7 +46,7 @@ add_custom_field('Customer', 'bank_branch', 'Data') # Chi nhánh
 add_custom_field('Customer', 'bank_province_city', 'Data') # Tỉnh thành
 add_custom_field('Customer', 'shipping_address', 'Data') # Địa chỉ giao hàng
 add_custom_field('Customer', 'operational_field', 'Data') # Địa chỉ giao hàng
-add_custom_field('Customer', 'use_e_invoice', 'Select', options='1\n0') # Sử dụng hđ điện tử
+add_custom_field('Customer', 'use_e_invoice', 'Check') # Sử dụng hđ điện tử
 add_custom_field('Customer', 'e_invoice_email', 'Data') # Thư nhận HĐĐT
 add_custom_field('Customer', 'e_invoice_representative', 'Data') # Nguời đại diện
 add_custom_field('Customer', 'order_source_table', 'Table', options='Order Source') # Nguồn đơn

@@ -28,7 +28,7 @@ add_custom_field('Supplier', 'bank_name', 'Data') # Tên ngân hàng
 add_custom_field('Supplier', 'bank_branch', 'Data') # Chi nhánh
 add_custom_field('Supplier', 'bank_province_city', 'Data') # Tỉnh thành
 add_custom_field('Supplier', 'shipping_address', 'Data') # Địa chỉ giao hàng
-add_custom_field('Supplier', 'use_e_invoice', 'Select', options='1\n0') # Sử dụng hđ điện tử
+add_custom_field('Supplier', 'use_e_invoice', 'Check') # Sử dụng hđ điện tử
 add_custom_field('Supplier', 'e_invoice_email', 'Data') # Thư nhận HĐĐT 
 add_custom_field('Supplier', 'e_invoice_representative', 'Data') # Người đại diện
 add_custom_field('Supplier', 'order_source_table', 'Table', options='Order Source') # Nguồn đơn
