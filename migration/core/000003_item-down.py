@@ -4,13 +4,15 @@ from loguru import logger
 
 logger.info("3. Item down...")
 
+delete_custom_field('item_code', 'Item')
 delete_custom_field('lastest_export_date', 'Item')
 delete_custom_field('lastest_entry_date', 'Item')
 delete_custom_field('maximum_inventory', 'Item')
 delete_custom_field('minimum_inventory', 'Item')
 delete_custom_field('planning_style', 'Item')
 delete_custom_field('sub_code', 'Item')
-delete_custom_field('selling_price', 'Item')
+delete_custom_field('selling_prices', 'Item')
+delete_custom_field('goods_codes', 'Item')
 delete_custom_field('is_finished_goods', 'Item')
 delete_custom_field('item_group_1', 'Item')
 delete_custom_field('item_group_2', 'Item')
@@ -38,3 +40,4 @@ delete_custom_field('tax_code', 'Tax Category')
 delete_custom_field('name_alias', 'Tax Category')
 
 delete_doctype('Item Price Table')
+delete_doctype('Goods Code Table')

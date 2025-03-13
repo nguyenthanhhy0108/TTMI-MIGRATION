@@ -15,11 +15,24 @@ item_price_table_data = {
 
 create_doctype(item_price_table_data)
 
+goods_code_table_data = {
+    "doctype": "DocType",
+    "name": "Goods Code Table",
+    "module": "Custom",
+    "custom": 1,
+    "istable": 1,
+    "fields": [
+        {"fieldname": "good_code", "fieldtype": "Data", "reqd": 1},
+    ]
+}
+
+create_doctype(goods_code_table_data)
+
 add_custom_field('Tax Category', 'tax_code', 'Data') # Mã thuế
 add_custom_field('Tax Category', 'name_alias', 'Data') # Tên khác
 
 add_custom_field('Item', 'name_alias', 'Data') # Tên khác
-add_custom_field('Item', 'is_finished_goods', 'Select', options='Yes\nNo') # Tạo nhập thành phẩm
+add_custom_field('Item', 'is_finished_goods', 'Select', options='1\n0') # Tạo nhập thành phẩm
 add_custom_field('Item', 'item_group_1', 'Link', link_to='Item Group') # Nhóm 1
 add_custom_field('Item', 'item_group_2', 'Link', link_to='Item Group') # Nhóm 2
 add_custom_field('Item', 'item_group_3', 'Link', link_to='Item Group') # Nhóm 3
@@ -29,6 +42,7 @@ add_custom_field('Item', 'default_tax_code', 'Link', link_to='Tax Category') # M
 add_custom_field('Item', 'barcode', 'Data') # Mã vạch
 add_custom_field('Item', 'cost_center', 'Link', link_to='Cost Center') # Mã phí 
 add_custom_field('Item', 'warehouse_account', 'Link', link_to='Account') # Tk kho (Tk vật tư)
+add_custom_field('Item', 'warehouse_account', 'Select', options='1\n0') # Tk kho (Tk vật tư)
 add_custom_field('Item', 'income_account', 'Link', link_to='Account') # Tk doanh thu
 add_custom_field('Item', 'expense_account', 'Link', link_to='Account') # Tk giá vốn
 add_custom_field('Item', 'discount_account', 'Link', link_to='Account') # Tk chiết khấu
@@ -36,11 +50,14 @@ add_custom_field('Item', 'promotion_account', 'Link', link_to='Account') # Tk kh
 add_custom_field('Item', 'returns_account', 'Link', link_to='Account') # Tk trả lại
 add_custom_field('Item', 'work_in_progress_account', 'Link', link_to='Account') # Tk s/p dở dang
 add_custom_field('Item', 'raw_material_expense_account', 'Link', link_to='Account') # Tk chi phí NVL
+
 add_custom_field('Item', 'volume', 'Float') # Thể tích
 add_custom_field('Item', 'color', 'Data') # Màu sắc
 add_custom_field('Item', 'size', 'Data') # Kích cỡ
 add_custom_field('Item', 'specifications', 'Data') # Quy cách
-add_custom_field('Item', 'selling_price', 'Table', options='Item Price Table') # Giá bán
+
+add_custom_field('Item', 'selling_prices', 'Table', options='Item Price Table') # Giá bán
+add_custom_field('Item', 'goods_codes', 'Table', options='Goods Code Table') # Mã hàng hoá
 add_custom_field('Item', 'sub_code', 'Data') # Mã phụ
 add_custom_field('Item', 'planning_style', 'Select', options='Không hoạch định\nHoạch định\nHoạch định theo cỡ lô') # Kiểu tính hoạch định
 add_custom_field('Item', 'minimum_inventory', 'Float') # Tồn kho tối thiểu
